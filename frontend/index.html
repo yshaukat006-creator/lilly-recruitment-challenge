@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medicine Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="disclaimer" id="disclaimer">
         Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
     </div>
+
     <header>
         <h1>Medicine Tracker</h1>
     </header>
-    <main>
 
-    </main>
+    <section>
+        <p>Want to load medicines? <button id="load-button">Yes</button></p>
+        <pre id="medicine-display">Medicines not loaded yet.</pre>
+
+        <p>Want to see the average price? <button id="avg-button">Yes</button></p>
+        <p id="avg-display"></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Want to input data? <button id="show-add-button">Yes</button></p>
+
+        <div id="add-section" style="display:none;">
+            <p>Name: <input id="new-medicine-name" type="text"></p>
+            <p>Price: £ <input id="new-medicine-price" type="text"></p>
+            <button id="add-button">Add Medicine</button>
+            <p id="add-message"></p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <p>Want to delete a medicine? <button id="show-delete-button">Yes</button></p>
+
+        <div id="delete-section" style="display:none;">
+            <p>Enter number to delete:</p>
+            <input id="delete-number" type="text">
+            <button id="delete-button">Delete</button>
+            <p id="delete-message"></p>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
